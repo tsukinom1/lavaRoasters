@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button a {
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.container  {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+.button{
+    width: 134px;
+    height: 51px;
+    background: #3D3017;
+    color: #fff;
+    margin-top: 35px;
+}
+
+.white-button{
+    background: #fff;
+    color: #3D3017;
+    margin-top: 10px;
+}
+
+/*----------------header ----------------------------*/
+.header__menu, .header__menu-list, .header__menu-sublist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu{
+    padding:  0 10px;
+}
+.header__menu-list{
+    gap: 350px;
+}
+.header__menu-sublist{
+    gap: 30px;
+}
+
+.header__menu-img{
+    width: 20px;
+    height: 20px;
+}
+#profileImg{
+    display: none;
+}
+/*-----------------main-section-*----------------*/
+.main-section, .about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#list-left {
+    position: absolute;
+    left: 0;
+    top: 480px;
+}
+#list-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.main-section__content{
+    margin-left: 50px;
+}
+.main-title{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    margin: 10px 0;
+}
+#main-cup{
+    margin-right: -50px;
+}
+/*-----------------about-us-----------------*/
+.about-us{
+    gap: 100px;
+    margin: 100px 0 60px;
+}
+#grains{
+    position: absolute;
+    left: -60px;
+    top: 35px;
+    z-index: -1;
+}
+/*.-----------------products------------------------------*/
+.products, .products .main-title, .title .main-title{
+    text-align: center;
+}
+.product__cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product__card{
+    position: relative;
+}
+
+.card-content{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+}
+
+.product__card .text{
+    padding-top: 10px;
+}
+/*----------------------Feedback----------------------*/
+.feedback{
+    margin: 50px 0;
+}
+.swiper {
+    width: 1200px;
+    height: 600px;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #9B684299;
+}
+.swiper-slide-content{
+    text-align: center;
+    max-width: 600px;
+    position: relative;
+}
+.swiper-background{
+    position: absolute;
+    z-index: -1;
+    left: 35%;
+    top: 25%;
+}
+.forging{
+    margin-bottom: 10px;
+}
+.text-20px{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #3D3017;
+}
+.text-22px{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #3D3017;
+    margin: 14px 0 0px;
+}
+/*------------------instagram------------------------*/
+.instagram, .instagram .main-title{
+    text-align: center;
+}
+.instagram__cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+/*------------------mailing-----------------------*/
+
+.mailing{
+    padding:0 20px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.mailing__content{
+    max-width: 570px;
+}
+.mailing__content .text{
+    margin: 25px 0 35px;
+}
+.input-container {
+    position: relative;
+}
+
+#inputMailing {
+    width: 90%;
+    height: 47px;
+    padding: 0 65px 0 10px;
+}
+
+.letter-button {
+    position: absolute;
+    right: 3px;
+    top: -48px;
+    width: 50px;
+    height: 45px;
+}
+
+
+/*------------------FORM------------------------------*/
+body.scroll-lock {
+    overflow: hidden;
+}
+.registerForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: gray;
+    width: 15%;
+    height: 18%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.form-link {
+    text-decoration: underline;
+    color: blue;
+}
+.form-button{
+    width: 70px;
+    height: 20px;
+}
+.options{
+    display: flex;
+    gap: 20px;
+}
+.register-input{
+    padding: 0 10px;
+    margin: 0 10px;
+    width: 120px;
+    height: 25px;
+}
+/*----------------footer-----------------------------*/
+.footer__blocks{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer__blocks .text {
+    max-width: 450px;
+    padding: 10px;
+}
+
+.footer-text{
+    text-align: center;
+    margin-top: 20px;
+}
+.footer__blog {
+    max-width: 270px;
+    display: flex;
+    gap: 10px;
+    padding: 5px 5px 5px 0;
+}
+.text-18px{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #3D3017;
+}
+.footer-item{
+    padding-top: 15px;
+}
+.socials{
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+/*---------------about-us.html-----------------*/
+.title{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*----------------video--------------------*/
+.video {
+    margin-left: -31%;
+}
+/*------------coffee-maker------------------*/
+.coffee-maker{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
+}
+.coffee-maker__content{
+    max-width: 570px;
+}
+/*----------shop--------------------*/
+.shop{
+    margin-top: 100px;
+}
+.shop .product__card{
+    text-align: center;
+    width: 370px;
+}
+.shop .card-content{
+    left: 30px;
+}
+/*--------------contact--------------------*/
+.contact{
+    margin-top: 100px;
+}
+.contact-form{
+    display: flex;
+    gap: 65px;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.contact-input{
+    padding: 0 20px 0 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 250px;
+}
+.input__row input + input {
+    margin-left: 40px;
+}
+.contact__content .text-20px{
+    color: #9B6842;
+}
+.contact__content .text-20px + .contact-content .text {
+    margin-top: 10px;
+}
+.contact__content .text + .contact__content .text-20px {
+    margin-top: 32px;
+}
+.button-contact .button {
+    margin: 0;
+}
