@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Shop</title>
+    <title>Story</title>
 </head>
 <body>
 <div class="container">
@@ -23,9 +24,8 @@
                     <ul class="header__menu-sublist">
                         <li class="header__menu-item"><a id="cart" href="#" class="link">
                             <img src="images/icons/cart.svg" alt="cart" class="header__menu-img"></a></li>
-                        <li class="header__menu-item"><a id="logIn" href="#" class="link">
-                            <img id="profile" src="images/icons/logIn.png" alt="profile" class="header__menu-img"></a>
-                        </li>
+                        <li class="header__menu-item"><a id="login" href="#" class="link">
+                            <img id="profile" src="images/icons/logIn.png" alt="profile" class="header__menu-img"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,12 +34,12 @@
 
     <main class="main">
         <img id="list-right" src="images/icons/list-right.png" alt="list-right">
-        <div class="title">
+        <div data-aos="zoom-in" data-aos-duration="1500" class="title">
             <h2 class="main-title">Shop Equipment</h2>
             <p class="text-18px">Home > Equipment</p>
         </div>
 
-        <section class="shop">
+        <section data-aos="zoom-in" data-aos-duration="1500" class="shop">
             <div class="product__cards">
                 <div class="product__card">
                     <img src="images/equipment/1.jpg" alt="Brewing COffee Kit" class="product__card-img">
@@ -81,7 +81,7 @@
             </div>
         </section>
 
-        <section class="mailing">
+        <section data-aos="fade-left" data-aos-duration="1200" class="mailing">
             <img src="images/mailing.jpg" alt="mailing-img" class="mailing-img">
             <div class="mailing__content">
                 <h2 class="main-title">News As Fresh As
@@ -97,7 +97,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer  class="footer">
         <div class="footer__blocks">
             <div class="footer__block">
                 <a class="link" href="#"><img src="images/icons/logo.svg" alt="logo" class="logo"></a>
@@ -146,29 +146,35 @@
     </footer>
 
 
-    <form id="logInForm" action="" class="registerForm">
-        <label for="inputLogInEmail"><input id="inputLogInEmail" type="email" class="register-input" placeholder="email"></label>
-        <label for="inputLogInPassword"><input id="inputLogInPassword" type="password" class="register-input" placeholder="password"></label><br>
+    <form id="formLogin" action="" class="registerForm">
+        <span id="closeLogin" class="close-times">&times;</span>
+        <label for="emailLogin"><input id="emailLogin" type="email" class="register-input" placeholder="@gmail.com"></label>
+        <label for="passwordLogin"><input id="passwordLogin" type="password" class="register-input" placeholder="password"></label><br>
         <div class="options">
-            <label>show password <input id="logInCheckbox" class="checkboxShowPassword" type="checkbox" placeholder=""></label>
+            <label for="checkboxLogin">show password <input id="checkboxLogin" class="checkboxShowPassword" type="checkbox"></label>
             <a href="#" class="form-link">Forgot password?</a>
         </div>
         <div class="buttons">
-            <button id="formLogIn" class="form-button">LogIn</button>
-            <button id="formSignUp"  class="form-button">SignUp</button>
+            <button id="buttonLogin" class="form-button">LogIn</button>
+            <button id="createAccount"  class="form-button">Create account</button>
         </div>
     </form>
-    <form id="signUpForm" action="" class="registerForm">
-        <label for="inputSignUpEmail"><input id="inputSignUpEmail" type="email" class="register-input" placeholder="email"></label>
-        <label for="inputSignUpPassword"><input id="inputSignUpPassword" type="password" class="register-input" placeholder="password"></label>
-        <label>show password <input id="signUpCheckbox" class="checkboxShowPassword" type="checkbox" placeholder=""></label>
+
+    <form id="formSignup" action="" class="registerForm">
+        <span id="closeSignup" class="close-times">&times;</span>
+        <label for="emailSignup"><input id="emailSignup" type="email" class="register-input" placeholder="@gmail.com"></label>
+        <label for="passwordSignup"><input id="passwordSignup" type="password" class="register-input" placeholder="password"></label>
+        <label for="checkboxSignup">show password <input id="checkboxSignup" class="checkboxShowPassword" type="checkbox" placeholder=""></label>
 
         <div class="buttons">
-            <button id="backForm" class="form-button">Back</button>
-            <button id="signUpProfile" class="form-button">SignUp</button>
+            <button id="buttonBack" class="form-button">Back</button>
+            <button id="buttonSignup" class="form-button">SignUp</button>
         </div>
     </form>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/login.js"></script>
+<script src="js/signup.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
