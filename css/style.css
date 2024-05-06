@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+.none{
+    display: none;
+}
 a{
     text-decoration: none;
     color: black;
@@ -375,4 +378,124 @@ body.scroll-lock {
 }
 .button-contact .button {
     margin: 0;
+}
+
+/*------------CART----------------------*/
+.cart{
+    margin: 50px 0 ;
+}
+.cart__rows, .cart__row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+.cart__row{
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.cart__product__card{
+    width: 250px;
+    padding: 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+}
+.cart__product__card-img{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+}
+.cart__product__card-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.cart-wrapper{
+    text-align: center;
+    width: 280px;
+    padding: 5px ;
+}
+.cart-wrapper *{
+    max-width: 270px;
+}
+.cart-wrapper img{
+    max-height: 100px;
+}
+.cart-item__top , .cart-item__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item__details{
+    gap: 5px
+}
+.cart-item .counter-wrapper {
+    font-size: 16px;
+    max-width: 70px;
+    padding: 3px 5px;
+}
+.details-wrapper{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.counter-wrapper, .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.counter-wrapper{
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.cart__product__card .white-button{
+    margin: 0 0 10px;
+}
+
+.total-price, .currency{
+    color: #9B6842;
+}
+.cart__body{
+    border: 3px solid black;
+    width: 320px;
+    margin: 5px 0;
+}
+.cart__options{
+    margin: 10px;
+    padding: 5px 5px 0;
+    border: 1px solid black;
+}
+.cart-item {
+    margin-bottom: 5px;
+}
+.order-input {
+    margin-top: 10px;
+    width: 90%;
+    height: 25px;
+    padding: 3px 10px 3px 3px;
+}
+#orderForm{
+    text-align: center;
+}
+#buttonOrder{
+    margin-bottom: 5px;
+}
+
+.free {
+    color: #9B6842;
+}
+.text-muted {
+    opacity: 0.7;
 }

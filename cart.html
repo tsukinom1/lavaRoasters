@@ -32,7 +32,105 @@
     <main class="main">
         <img id="list-left" src="images/icons/list-left.png" alt="list-left">
         <img id="list-right" src="images/icons/list-right.png" alt="list-right">
-        section.
+
+        <section class="cart">
+            <div class="cart__rows">
+                <div class="cart__row">
+                    <div class="cart__product__card" data-id="01">
+                        <img src="images/cards/card1-big.jpg" alt="Somanc" class="cart__product__card-img">
+                        <h4 class="text cart__product__card-title">Somanc, Kenya</h4>
+                        <p><small data-items-in-box class="text-muted">1 шт.</small></p>
+
+                        <div class="details-wrapper">
+                            <div class="items   counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__weight">180г.</div>
+                                <div class="price__currency">300 ₽</div>
+                            </div>
+                        </div>
+                        <button data-cart class="button white-button">Add To Cart</button>
+                    </div>
+                    <div class="cart__product__card" data-id="02">
+                        <img src="images/cards/card2-big.jpg" alt="Somanc" class="cart__product__card-img">
+                        <h4 class="text cart__product__card-title">Somanc, Kenya</h4>
+                        <p><small data-items-in-box class="text-muted">1 шт.</small></p>
+                        <div class="details-wrapper">
+                            <div class="items   counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__weight">180г.</div>
+                                <div class="price__currency">300 ₽</div>
+                            </div>
+                        </div>
+                        <button data-cart class="button white-button">Add To Cart</button>
+                    </div>
+                    <div class="cart__product__card" data-id="03">
+                        <img src="images/cards/card3-big.jpg" alt="Somanc" class="cart__product__card-img">
+                        <h4 class="text cart__product__card-title">Somanc, Kenya</h4>
+                        <p><small data-items-in-box class="text-muted">1 шт.</small></p>
+                        <div class="details-wrapper">
+                            <div class="items counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__weight">180г.</div>
+                                <div class="price__currency">300 ₽</div>
+                            </div>
+                        </div>
+                        <button data-cart class="button white-button">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="cart__row">
+                    <div class="cart__body">
+                        <div class="cart__options">
+                            <p><span class="text-22px">Ваш заказ:</span></p>
+                                <div data-cart-empty class="alert alert-secondary" role="alert">
+                                    <h4 class="text cart-title">Корзина пуста</h4>
+                                </div>
+                                <div class="cart-wrapper">
+
+                                </div>
+                                <!-- Стоимость заказа -->
+                                <div class="cart-total">
+                                    <p data-cart-delivery class="none"><span class="text-22px">Доставка:</span> <span class="delivery-cost">250 ₽</span>
+                                    <span><small  class="text-muted"><br>Бесплатно при заказе от 800 ₽ </small></span></p>
+                                    <p><span class="text-22px">Итого:</span> <span class="total-price">0</span> <span class="currency">₽</span></p>
+                                </div>
+                                <!-- // Стоимость заказа -->
+
+                        </div>
+
+                        <!-- Оформить заказ -->
+                        <div id="orderBlock" class="cart__options none">
+                            <h4 class="text cart-title">Оформить заказ</h4>
+                                <form id="orderForm">
+                                    <div class="order-inputs">
+                                        <input id="emailOrder" type="email" class="order-input" placeholder="Ваш @gmail.com">
+                                        <input id="addressOrder" type="text" class="order-input" placeholder="Ваш адрес доставки">
+                                    </div>
+                                    <button id="buttonOrder" type="submit" class="button white-button">Заказать</button>
+                                </form>
+                        </div>
+                        <!-- // Оформить заказ -->
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
     </main>
     <footer class="footer">
         <div class="footer__blocks">
@@ -82,5 +180,7 @@
         <p class="footer-text">© 2024 lava roasters.All Rights Reserved.</p>
     </footer>
 </div>
+
+<script src="js/cart.js"></script>
 </body>
 </html>
