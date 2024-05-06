@@ -39,18 +39,18 @@
             <p class="text-18px">Home > Contact Us</p>
         </div>
         <section data-aos="fade-right" data-aos-duration="2000" class="contact">
-            <form action="" class="contact-form">
+            <form id="formContact" action="" class="contact-form">
                 <div class="contact__form">
                     <div class="input__row">
-                        <input type="text" class="contact-input" placeholder="Name*">
-                        <input type="number" class="contact-input" placeholder="Phone*">
+                        <input id="nameContact" type="text" class="contact-input" placeholder="Name*">
+                        <input id="phoneContact" type="number" class="contact-input" placeholder="Phone*">
                     </div>
                     <div class="input__row">
-                        <input type="email" class="contact-input" placeholder="Email*">
-                        <input type="text" class="contact-input" placeholder="Message*">
+                        <input id="emailContact" type="email" class="contact-input" placeholder="Email*">
+                        <input id="messageContact" type="text" class="contact-input" placeholder="Message*">
                     </div>
                     <div class="button-contact">
-                        <button class="button">Send</button>
+                        <button id="buttonContact" class="button">Send</button>
                     </div>
                 </div>
                 <div class="contact__content">
@@ -65,15 +65,14 @@
         </section>
 
         <section data-aos="fade-left" data-aos-duration="1200" class="mailing">
-            <img src="images/mailing.jpg" alt="mailing-img" class="mailing-img">
+            <img src="images/other/mailing.jpg" alt="mailing-img" class="mailing-img">
             <div class="mailing__content">
                 <h2 class="main-title">News As Fresh As
                     Our Coffee</h2>
                 <p class="text">Get The Latest Updated On New Products And Upcoming Sales</p>
-                <label for="inputMailing" class="input-container">
-                    <input id="inputMailing" type="email" placeholder="Your email">
-                    <button id="letter-button" class="button letter-button" type="submit"><img
-                            src="images/icons/letter.svg" alt="" class="letter"></button>
+                <label for="emailMailing" class="input-container">
+                    <input id="emailMailing" type="email" placeholder="Your email">
+                    <button id="buttonMailing" class="button letter-button"><img src="images/icons/letter.svg" alt="" class="letter"></button>
                 </label>
 
             </div>
@@ -157,6 +156,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/login.js"></script>
 <script src="js/signup.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/mailing.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

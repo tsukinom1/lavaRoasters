@@ -186,6 +186,11 @@ body.scroll-lock {
     padding: 0 20px;
     margin-top: 30px;
 }
+.instagram img:hover {
+    transform: scale(1.05);
+    border: 5px solid yellow;
+    transition-duration: 0.2s;
+}
 /*------------------mailing-----------------------*/
 
 .mailing{
@@ -206,7 +211,7 @@ body.scroll-lock {
     position: relative;
 }
 
-#inputMailing {
+#emailMailing {
     width: 90%;
     height: 47px;
     padding: 0 65px 0 10px;
