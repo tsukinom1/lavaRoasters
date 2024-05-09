@@ -12,7 +12,28 @@ const cartEmptyBadge = document.querySelector('[data-cart-empty]');
 
 const orderBlock = document.getElementById('orderBlock');
 
+const buttonOrder = document.getElementById('buttonOrder');
 
+
+const emailOrder = document.getElementById('emailOrder');
+const addressOrder = document.getElementById('addressOrder');
+
+
+buttonOrder.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (emailOrder.value.indexOf('@gmail.com') && addressOrder.value.trim() !== '') {
+        let found = usersOfLava.find(item => item.email === emailOrder.value);
+        if (found) {
+            alert('Ваш заказ принят! Ждите ответа от курьера.');
+            emailOrder.value = '';
+            addressOrder.value = '';
+        } else {
+            alert(`Пользователь с email ${emailOrder.value} не зарегистрирован.`);
+        }
+    } else {
+        alert('Введите корректные данные и повторите попытку.');
+    }
+});
 
 
 function toggleCartStatus() {

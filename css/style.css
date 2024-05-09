@@ -124,6 +124,11 @@ body.scroll-lock {
     position: relative;
 }
 
+.product__card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .card-content{
     position: absolute;
     top: 30px;
